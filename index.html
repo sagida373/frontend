@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Review Platform</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-effects.js"></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar" style="box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+      <div class="logo" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Movie Review Platform</div>
+      <ul class="nav-links" style="transition: all 0.3s ease;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login/Registration</a></li>
+        <li><a href="trailers.html">Trailers</a></li>
+        <li><a href="ratings.html">Ratings</a></li>
+        <li><a href="reviews.html" style="color: white;">Reviews</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search movies..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero-banner">
+      <img src="images/movie-set.png" alt="Movie Background" class="hero-image" />
+      <div class="hero-overlay"></div>
+      <article class="hero-content">
+        <h1>Track films you've watched.</h1>
+        <div class="hero-text-container">
+          <h2>Save those you want to see.</h2>
+          <h2>Share your favorites with friends.</h2>
+        </div>
+        <p>Join our community of film enthusiasts and start your cinematic journey today!</p>
+        <div id="movie-of-the-day"></div>
+      </article>
+    </section>
+
+    <section class="movie-recommendations">
+      <h2><i class="fas fa-search"></i> More Movies For You</h2>
+      <div id="recommended-movies-list"></div>
+    </section>
+
+    <section class="features">
+      <h2>Key Features</h2>
+      <ul>
+        <li>Track movies you've watched</li>
+        <li>Save films to watch later</li>
+        <li>Rate and review movies</li>
+        <li>Join discussions with other movie lovers</li>
+      </ul>
+    </section>
+
+    <aside id="lucky-number-container"></aside>
+  </main>
+</body>
+</html>
