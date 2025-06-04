@@ -1,0 +1,71 @@
+body {
+      background-color: #121212;
+    }
+    .card {
+      background-color: #333;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      margin-bottom: 30px;
+    }
+    .card-body {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: white;
+    }
+    .card-text {
+      margin-bottom: 20px;
+      color: #d3d3d3;
+    }
+    .ratio-16x9 {
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+    .ratio-16x9 iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .trailers-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    .trailers-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      width: 100%;
+      margin-bottom: 40px;
+    }
+    .trailer-card {
+      flex: 0 0 calc(33.333% - 30px);
+      max-width: 350px;
+    }
+    @media (max-width: 992px) {
+      .trailer-card {
+        flex: 0 0 calc(50% - 30px);
+      }
+    }
+    @media (max-width: 768px) {
+      .trailer-card {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+    }

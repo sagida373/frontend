@@ -1,0 +1,133 @@
+
+    body {
+      background-color: #121212;
+    }
+    .card {
+      background-color: #333;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      margin-bottom: 30px;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    .card-body {
+      padding: 20px;
+      flex-grow: 1;
+    }
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+    }
+    .review-text {
+      font-size: 1rem;
+      color: #ddd;
+    }
+    .d-flex {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .d-flex img {
+      border-radius: 50%;
+      margin-right: 15px;
+    }
+    .col-md-6, .col-lg-4 {
+      max-width: 350px;
+      flex: 1 1 350px;
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+    .rating {
+      color: #ffc107;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .like-btn {
+      margin-top: 10px;
+      padding: 6px 12px;
+      background-color: #0d6efd;
+      border: none;
+      border-radius: 8px;
+      color: white;
+      cursor: pointer;
+    }
+    #filter-reviews {
+      background-color: #333;
+      color: white;
+      border: 1px solid #555;
+    }
+    
+    #filter-reviews:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: #555;
+    }
+    
+    option {
+      background-color: #333;
+      color: white;
+    }
+
+.review-form-section .card {
+  background-color: #333;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+}
+
+.review-form-section .card-body {
+  padding: 20px;
+}
+
+.review-form-section h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.review-form-section .form-label {
+  color: #fff;
+  font-weight: 500;
+}
+
+.review-form-section input,
+.review-form-section select,
+.review-form-section textarea {
+  background-color: #444;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+}
+
+.review-form-section input:focus,
+.review-form-section select:focus,
+.review-form-section textarea:focus {
+  outline: none;
+  box-shadow: none;
+  background-color: #555;
+}
+
+.review-form-section button {
+  background-color: #0d6efd;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.review-form-section button:hover {
+  background-color: #0d6efd;
+  cursor: pointer;
+}
