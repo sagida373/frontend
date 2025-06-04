@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Register - Movie Review</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/register.css"/>
+  
+</head>
+<body style="background-color:#111; color:#fff; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+   <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="logo">Movie Review Platform</div>
+      <ul class="nav-links ml-auto">
+        <li><a href="login.html" style="color: white;">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="register-container" style="min-height:100vh; display:flex; align-items:center; justify-content:center;">
+      <article class="register-card" style="background-color:#1e1e1e; padding:2rem; border-radius:1rem; box-shadow:0 0 30px rgba(0,0,0,0.5); width:100%; max-width:500px;">
+        <header class="text-center mb-4" style="text-align:center; margin-bottom:1.5rem;">
+          <i class="fas fa-user-plus fa-3x text-success" style="color:#28a745; font-size:3rem;"></i>
+          <h2 class="mt-2" style="margin-top:0.5rem;">Create Account</h2>
+          <p class="text-muted" style="color:#aaa;">Join our movie review platform</p>
+        </header>
+
+        <form>
+          <section>
+            <div class="mb-3" style="margin-bottom:1rem;">
+              <label for="username" class="form-label" style="color:#ccc;">Username</label>
+              <div class="input-group" style="display:flex; align-items:center;">
+                <span class="input-group-text bg-dark text-white" style="background-color:#000; color:#fff; padding:0.375rem 0.75rem; display:flex; align-items:center;"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" id="username" placeholder="Choose a username" required style="background-color:#2c2c2c; color:#fff; border:none; flex:1; padding:0.375rem 0.75rem;">
+              </div>
+            </div>
+
+            <div class="mb-3" style="margin-bottom:1rem;">
+              <label for="registerEmail" class="form-label" style="color:#ccc;">Email address</label>
+              <div class="input-group" style="display:flex; align-items:center;">
+                <span class="input-group-text bg-dark text-white" style="background-color:#000; color:#fff; padding:0.375rem 0.75rem; display:flex; align-items:center;"><i class="fas fa-envelope"></i></span>
+                <input type="email" class="form-control" id="registerEmail" placeholder="you@example.com" required style="background-color:#2c2c2c; color:#fff; border:none; flex:1; padding:0.375rem 0.75rem;">
+              </div>
+            </div>
+
+            <div class="mb-3" style="margin-bottom:1rem;">
+              <label for="registerPassword" class="form-label" style="color:#ccc;">Password</label>
+              <div class="input-group" style="display:flex; align-items:center;">
+                <span class="input-group-text bg-dark text-white" style="background-color:#000; color:#fff; padding:0.375rem 0.75rem; display:flex; align-items:center;"><i class="fas fa-lock"></i></span>
+                <div class="input-group" style="display:flex; align-items:center;">
+                  <input type="password" class="form-control" id="registerPassword" placeholder="Create a password" required style="flex:1;">
+                  <button type="button" id="toggle-password-register" style="background:none;border:none;color:#28a745;margin-left:10px;cursor:pointer;">Show</button>        
+                </div>
+              </div>
+            </div>
+
+            <div class="form-check mb-3" style="margin-bottom:1rem;">
+              <input class="form-check-input" type="checkbox" id="termsCheck" required style="margin-top:0.3rem; margin-right:0.5rem;">
+              <label class="form-check-label" for="termsCheck" style="color:#fff;">
+                I agree to the <a href="#" class="text-warning" style="color:#ffc107; text-decoration:none;">terms and conditions</a>
+              </label>
+            </div>
+          </section>
+
+          <button type="submit" class="btn btn-success w-100" style="background-color:#28a745; border:none; width:100%; padding:0.5rem 1rem;">Sign Up</button>
+
+          <footer class="text-center mt-3" style="text-align:center; margin-top:1rem; color:#fff;">
+            Already have an account?
+            <a href="login.html" class="text-warning" style="color:#ffc107; text-decoration:none;">Log in here</a>
+          </footer>
+        </form>
+      </article>
+    </div>
+  </main>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

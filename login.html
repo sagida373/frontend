@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Login - Movie Review</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/all.min.css"/>
+  <link rel="stylesheet" href="css/styles.css"/>
+  <link rel="stylesheet" href="css/login.css"/>
+</head>
+<body style="background-color:#111; color:#fff; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+  <header>
+    <nav class="navbar" style="box-shadow: 0 2px 10px rgba(0,0,0,0.5);">
+      <div class="logo" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.7);">Movie Review Platform</div>
+      <ul class="nav-links" style="transition: all 0.3s ease;">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html">Login/Registration</a></li>
+        <li><a href="trailers.html">Trailers</a></li>
+        <li><a href="ratings.html">Ratings</a></li>
+        <li><a href="reviews.html" style="color: white;">Reviews</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search movies..." />
+        <button><i class="fas fa-search"></i></button>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="login-container" style="min-height:100vh; display:flex; align-items:center; justify-content:center;">
+      <article class="login-card" style="background-color:#1e1e1e; padding:2rem; border-radius:1rem; box-shadow:0 0 30px rgba(0,0,0,0.5); width:100%; max-width:450px;">
+        <header class="text-center mb-4" style="text-align:center; margin-bottom:1.5rem;">
+          <i class="fas fa-film fa-3x text-primary" style="color:#0d6efd; font-size:3rem;"></i>
+          <h2 class="mt-2" style="margin-top:0.5rem;">Welcome Back</h2>
+          <p class="text-muted" style="color:#aaa;">Log in to your movie review account</p>
+        </header>
+        <form>
+          <section>
+            <div class="mb-3" style="margin-bottom:1rem;">
+              <label for="email" class="form-label" style="color:#ccc;">Email address</label>
+              <div class="input-group" style="display:flex; align-items:center;">
+                <span class="input-group-text bg-dark text-white"><i class="fas fa-envelope"></i></span>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+            <div class="mb-3" style="margin-bottom:1rem;">
+              <label for="password" class="form-label" style="color:#ccc;">Password</label>
+              <div class="input-group" style="display:flex; align-items:center;">
+                <span class="input-group-text bg-dark text-white" style="background-color:#000; color:#fff; padding:0.375rem 0.75rem; display:flex; align-items:center;"><i class="fas fa-lock"></i></span>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                <button type="button" id="toggle-password-login" style="background:none;border:none;color:#28a745;margin-left:10px;cursor:pointer;">Show</button>
+              </div>
+            </div>
+            <div class="mb-3 form-check" style="margin-bottom:1rem; display:flex; align-items:center;">
+              <input type="checkbox" class="form-check-input" id="rememberMe" style="margin-top:0.3rem; margin-right:0.5rem;">
+              <label class="form-check-label" for="rememberMe" style="color:#fff;">Remember me</label>
+            </div>
+          </section>
+          <button type="submit" class="btn btn-primary w-100" style="background-color:#0d6efd; border:none; width:100%; padding:0.5rem 1rem;">Log In</button>
+          <footer class="text-center mt-3" style="text-align:center; margin-top:1rem; color:#fff;">
+            Don't have an account?
+            <a href="register.html" class="text-warning" style="color:#ffc107; text-decoration:none;">Sign up here</a>
+          </footer>
+        </form>
+      </article>
+    </div>
+  </main>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

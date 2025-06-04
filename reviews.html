@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Reviews</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/reviews.css" />
+</head>
+<body class="bg-dark text-white">
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="logo">Movie Review Platform</div>
+      <ul class="nav-links ml-auto">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="login.html" style="color: white;">Login/Registration</a></li>
+        <li><a href="trailers.html" style="color: white;">Trailers</a></li>
+        <li><a href="ratings.html" style="color: white;">Ratings</a></li>
+        <li><a href="reviews.html" style="color: white;">Reviews</a></li>
+      </ul>
+      <div class="search-bar">
+        <input type="text" placeholder="Search..." style="padding: 8px 12px; width: 250px;">
+      </div>
+    </nav>
+  </header>
+
+  <main class="container py-5">
+    <h1 class="text-center mb-4"><i class="fas fa-film"></i> Movie Reviews</h1>
+<section class="review-form-section mb-5">
+  <h2 class="text-center mb-4"><i class="fas fa-pen"></i> Submit Your Review</h2>
+  <div class="card bg-dark text-white border-light shadow">
+    <div class="card-body">
+      <form id="review-form">
+        <div class="form-group">
+          <label for="username" class="form-label">Your Name</label>
+          <input type="text" id="username" class="form-control bg-secondary text-white border-0" placeholder="Enter your name" required />
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="movie" class="form-label">Select Movie</label>
+          <select id="movie" class="form-control bg-secondary text-white border-0" required>
+            <option value="">-- Choose a movie --</option>
+            <option>The Batman (2022)</option>
+            <option>Everything Everywhere All At Once (2022)</option>
+            <option>The Whale (2022)</option>
+            <option>Mission Impossible 7 (2023)</option>
+            <option>The Menu (2022)</option>
+            <option>Dune (2021)</option>
+            <option>John Wick: Chapter 4 (2023)</option>
+            <option>No Time to Die (2021)</option>
+            <option>Gone Girl (2014)</option>
+            <option>Lady Bird (2017)</option>
+          </select>
+        </div>
+
+        <div class="form-group mt-3">
+          <label for="review" class="form-label">Your Review</label>
+          <textarea id="review" class="form-control bg-secondary text-white border-0" rows="4" placeholder="Write your review..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-light mt-4 px-4">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    <section class="reviews-grid">
+      <div class="row">
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">movie_lover123</h6>
+                  <small class="text-muted"><strong>The Batman (2022)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">Amazing cinematography and Pattinson's performance was top-tier. Gotham has never looked this real...</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">cinephile88</h6>
+                  <small class="text-muted"><strong>Everything Everywhere All At Once (2022)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">This movie is a masterpiece. Wildly creative and deeply emotional...</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">drama_fanatic</h6>
+                  <small class="text-muted"><strong>The Whale (2022)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">Heartbreaking and powerful. Brendan Fraser deserves every award...</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">action_hero</h6>
+                  <small class="text-muted"><strong>Mission Impossible 7 (2023)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">Tom Cruise never disappoints! The action scenes were insane!</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">horror_buff</h6>
+                  <small class="text-muted"><strong>The Menu (2022)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">A gripping satire with a dark sense of humor. Truly unique.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">romantic_heart</h6>
+                  <small class="text-muted"><strong>Dune (2021)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">A visual masterpiece, but the story was a bit too slow for me.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">comedy_lover</h6>
+                  <small class="text-muted"><strong>John Wick: Chapter 4 (2023)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">It's relentless and intense, keeping you at the edge of your seat the entire time!</p>
+            </div>
+          </div>
+        </article>
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">documentary_fan</h6>
+                  <small class="text-muted"><strong>No Time to Die (2021)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">The action was top-notch, and the emotional depth added so much to the character's final journey.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">thriller_queen</h6>
+                  <small class="text-muted"><strong>Gone Girl (2014)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">An intense psychological thriller with plot twists you won't see coming.</p>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <header class="d-flex">
+                <img src="images/avatar.png" alt="Avatar" width="50" height="50">
+                <div>
+                  <h6 class="mb-0">indie_fanatic</h6>
+                  <small class="text-muted"><strong>Lady Bird (2017)</strong></small>
+                </div>
+              </header>
+              <p class="review-text">A beautifully crafted coming-of-age film. A perfect blend of humor and heartbreak.</p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/reviews.js"></script>
+</body>
+</html>
